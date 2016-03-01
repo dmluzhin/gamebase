@@ -3,3 +3,62 @@
 @import "lib/reset";
 @import "lib/fonts";
 @import "lib/shadows";
+
+.wrapper {
+  @include wrapper;
+  @include flex-simple;
+  flex: {
+    direction: column;
+    shrink: 1;
+  }
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+}
+header {
+  width: 100%;
+  min-height: 100px;
+  background-color: $gr900;
+}
+footer {
+  width: 100%;
+  min-height: 100px;
+  background-color: $gr900;
+}
+section {
+  width: 100%;
+  min-height: 200px;
+  background-color: $gr800;
+}
+.layout {
+  @include flex-row;
+  @include space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: $gr700;
+  min-height: 875px;
+  &-leftbar {
+    width: 20%;
+    background: $gr600;
+    min-width: 200px;
+    //margin: 10px;
+    min-height: 200px;
+    border-right: 1px solid $gr500;
+  }
+  &-middlebar {
+    width: 60%;
+    min-width: 200px;
+    //margin: 10px;
+    min-height: 200px;
+    background: $gr600;
+  }
+  &-rightbar {
+    width: 20%;
+    background: $gr600;
+    min-width: 200px;
+    //margin: 10px;
+    min-height: 200px;
+    border-left: 1px solid $gr500;
+  }
+}

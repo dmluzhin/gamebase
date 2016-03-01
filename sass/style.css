@@ -1,3 +1,8 @@
+/*COLORS*/
+/*GREY PATTERN*/
+/*TEXT*/
+/*MARGINS AND PADDINGS*/
+/*FLEX MIXINS*/
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -34,5 +39,70 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  justify-content: space-between;
+  height: 100%;
+  position: relative; }
+
+header {
+  width: 100%;
+  min-height: 100px;
+  background-color: #212121; }
+
+footer {
+  width: 100%;
+  min-height: 100px;
+  background-color: #212121; }
+
+section {
+  width: 100%;
+  min-height: 200px;
+  background-color: #424242; }
+
+.layout {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #616161;
+  min-height: 875px; }
+  .layout-leftbar {
+    width: 20%;
+    background: #757575;
+    min-width: 200px;
+    min-height: 200px;
+    border-right: 1px solid #9E9E9E; }
+  .layout-middlebar {
+    width: 60%;
+    min-width: 200px;
+    min-height: 200px;
+    background: #757575; }
+  .layout-rightbar {
+    width: 20%;
+    background: #757575;
+    min-width: 200px;
+    min-height: 200px;
+    border-left: 1px solid #9E9E9E; }
 
 /*# sourceMappingURL=style.css.map */
