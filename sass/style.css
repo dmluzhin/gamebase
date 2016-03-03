@@ -40,6 +40,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  background-color: #fafafa;
+  font-family: 'Open Sans', sans-serif; }
+
 .wrapper {
   width: 100%;
   height: auto;
@@ -55,54 +59,49 @@ table {
 
 header {
   width: 100%;
-  min-height: 100px;
-  background-color: #212121; }
+  height: 60px;
+  background-color: #FAFAFA;
+  /*border-bottom: 4px solid black;*/
+  margin-bottom: 1px;
+  border-bottom: 1px solid #ccc; }
+  header .logo-block {
+    width: 245px;
+    border-right: 1px solid #ccc;
+    height: 100%;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
 
 footer {
   width: 100%;
   min-height: 100px;
-  background-color: #212121; }
+  background-color: #FAFAFA;
+  margin-top: 1px;
+  /*border-top: 4px solid black;*/ }
 
 section {
   width: 100%;
   min-height: 200px;
-  background-color: #424242; }
+  background-color: #FAFAFA; }
 
-.layout {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #616161;
-  min-height: 875px; }
-  .layout-leftbar {
-    width: 20%;
-    background: #757575;
-    min-width: 200px;
-    min-height: 200px;
-    border-right: 1px solid #9E9E9E; }
-  .layout-middlebar {
-    width: 60%;
-    min-width: 200px;
-    min-height: 200px;
-    background: #757575; }
-  .layout-rightbar {
-    width: 20%;
-    background: #757575;
-    min-width: 200px;
-    min-height: 200px;
-    border-left: 1px solid #9E9E9E; }
+.leftside-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: calc(100% - 61px);
+  width: 245px;
+  background-color: #FAFAFA;
+  border-right: 1px solid #ccc; }
+
+.rightside-bar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: calc(100% - 61px);
+  width: 270px;
+  background-color: #FAFAFA;
+  border-left: 1px solid #ccc; }
 
 /*# sourceMappingURL=style.css.map */

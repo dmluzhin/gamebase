@@ -3,7 +3,10 @@
 @import "lib/reset";
 @import "lib/fonts";
 @import "lib/shadows";
-
+body {
+  background-color: #fafafa;
+  font-family: 'Open Sans', sans-serif;
+}
 .wrapper {
   @include wrapper;
   @include flex-simple;
@@ -17,48 +20,44 @@
 }
 header {
   width: 100%;
-  min-height: 100px;
-  background-color: $gr900;
+  height: 60px;
+  background-color: $gr50;
+  /*border-bottom: 4px solid black;*/
+  margin-bottom: 1px;
+  border-bottom: 1px solid #ccc;
+  .logo-block {
+    width: 245px;
+    border-right: 1px solid #ccc;
+    height: 100%;
+    text-transform: uppercase;
+    @include flex-simple;
+  }
 }
 footer {
   width: 100%;
   min-height: 100px;
-  background-color: $gr900;
+  background-color: $gr50;
+  margin-top: 1px;
+  /*border-top: 4px solid black;*/
 }
 section {
   width: 100%;
   min-height: 200px;
-  background-color: $gr800;
+  background-color: $gr50;
 }
-.layout {
-  @include flex-row;
-  @include space-between;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: $gr700;
-  min-height: 875px;
-  &-leftbar {
-    width: 20%;
-    background: $gr600;
-    min-width: 200px;
-    //margin: 10px;
-    min-height: 200px;
-    border-right: 1px solid $gr500;
-  }
-  &-middlebar {
-    width: 60%;
-    min-width: 200px;
-    //margin: 10px;
-    min-height: 200px;
-    background: $gr600;
-  }
-  &-rightbar {
-    width: 20%;
-    background: $gr600;
-    min-width: 200px;
-    //margin: 10px;
-    min-height: 200px;
-    border-left: 1px solid $gr500;
-  }
+.leftside-bar {
+  position: fixed;
+  left:0; bottom: 0;
+  height: calc(100% - 61px);
+  width: 245px;
+  background-color: $gr50;
+  border-right: 1px solid #ccc;
+}
+.rightside-bar {
+  position: fixed;
+  right: 0; bottom: 0;
+  height: calc(100% - 61px);
+  width: 270px;
+  background-color: $gr50;
+  border-left: 1px solid #ccc;
 }
