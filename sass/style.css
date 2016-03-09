@@ -1,12 +1,17 @@
 /*COLORS*/
 /*GREY PATTERN*/
+/*RED PATTERN*/
 /*TEXT*/
 /*MARGINS AND PADDINGS*/
+/*SHADOWS*/
 /*FLEX MIXINS*/
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
+* {
+  box-sizing: border-box; }
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -51,11 +56,12 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-shrink: 1;
   justify-content: space-between;
   height: 100%;
-  position: relative; }
+  position: relative;
+  min-height: 500px; }
 
 header {
   width: 100%;
@@ -63,16 +69,49 @@ header {
   background-color: #FAFAFA;
   /*border-bottom: 4px solid black;*/
   margin-bottom: 1px;
-  border-bottom: 1px solid #ccc; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
   header .logo-block {
     width: 245px;
-    border-right: 1px solid #ccc;
     height: 100%;
     text-transform: uppercase;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
+    font-weight: 600;
+    font-size: 24px;
+    background-color: #212121;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    z-index: 3; }
+    header .logo-block a {
+      color: #FAFAFA;
+      text-decoration: none;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+  header .top-nav {
+    width: calc(100% - 245px);
+    height: 100%;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #212121; }
 
 footer {
   width: 100%;
@@ -90,18 +129,24 @@ section {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: calc(100% - 61px);
+  height: calc(100% - 60px);
   width: 245px;
-  background-color: #FAFAFA;
-  border-right: 1px solid #ccc; }
+  background-color: #212121;
+  min-height: 100px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  z-index: 4; }
 
 .rightside-bar {
-  position: fixed;
-  right: 0;
-  bottom: 0;
+  /*position: fixed;
+  right: 0; bottom: 0;
   height: calc(100% - 61px);
   width: 270px;
-  background-color: #FAFAFA;
-  border-left: 1px solid #ccc; }
+  background-color: $gr50;
+  border-left: 1px solid #ccc;*/ }
+
+.page {
+  width: calc(100% - 246px);
+  min-height: 100px;
+  margin-left: 246px; }
 
 /*# sourceMappingURL=style.css.map */
