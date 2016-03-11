@@ -48,8 +48,8 @@ table {
 .home-icon {
   background-image: url("../img/icons/home.png");
   background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 24px; }
+  background-position: left 10px center;
+  background-size: 14px; }
 
 .leftside-bar {
   position: fixed;
@@ -64,7 +64,7 @@ table {
   padding: 16px; }
   .leftside-bar-user-block {
     width: 100%;
-    min-height: 100px;
+    min-height: 20px;
     border-bottom: 1px solid #424242; }
     .leftside-bar-user-block .bar {
       display: -webkit-box;
@@ -85,6 +85,24 @@ table {
       cursor: pointer; }
       .leftside-bar-user-block .bar:hover {
         background-color: #212121; }
+      .leftside-bar-user-block .bar span {
+        display: block;
+        height: 100%;
+        line-height: 2.3;
+        padding-right: 10px;
+        text-align: left; }
+    .leftside-bar-user-block .active {
+      border-bottom: 3px solid #E53935; }
+  .leftside-bar .search-block {
+    width: 100%;
+    min-height: 20px;
+    border-bottom: 1px solid #424242;
+    padding: 10px 0; }
+    .leftside-bar .search-block .search {
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid #424242;
+      padding: 5px; }
 
 body {
   background-color: #212121;
@@ -121,13 +139,12 @@ header {
   header .logo-block {
     width: 245px;
     height: 100%;
-    text-transform: uppercase;
-    font-weight: 600;
     font-size: 24px;
     background-color: black;
     border-bottom: 1px solid #424242;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    z-index: 3; }
+    z-index: 3;
+    position: relative; }
     header .logo-block a {
       color: #FAFAFA;
       text-decoration: none;
@@ -219,5 +236,24 @@ section {
   width: calc(100% - 246px);
   min-height: 100px;
   margin-left: 246px; }
+
+/*DELETE THIS*/
+.first-letter {
+  position: absolute;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 45px;
+  color: white;
+  bottom: 2px;
+  left: 34px; }
+  .first-letter span {
+    font-size: 33px; }
+
+.second-letter {
+  position: absolute;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  color: #F44336;
+  left: 83px;
+  top: 12px; }
 
 /*# sourceMappingURL=style.css.map */

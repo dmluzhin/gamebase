@@ -32,13 +32,12 @@ header {
   .logo-block {
     width: 245px;
     height: 100%;
-    text-transform: uppercase;
-    font-weight: 600;
     font-size: 24px;
     background-color: black;
     border-bottom: 1px solid $gr800;
     box-shadow: $shadow4;
     z-index: 3;
+    position: relative;
     a {
       color: $gr50;
       text-decoration: none;
@@ -108,4 +107,27 @@ section {
   width: calc(100% - 246px);
   min-height: 100px;
   margin-left: 246px;
+}
+
+
+
+/*DELETE THIS*/
+.first-letter {
+  position: absolute;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 45px;
+  color: white;
+  bottom: 2px;
+  left: 34px;
+  span {
+    font-size: 33px;
+  }
+}
+.second-letter {
+  position: absolute;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  color: #F44336;
+  left: 83px;
+  top: 12px;
 }
