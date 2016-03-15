@@ -8,15 +8,14 @@
   @include align-items-center;
   width: 100%;
   height: 30px;
-  color: $gr50;
-  padding: 0 8px 0 32px;
-  margin: 2px 0;
+  color: $gr200;
+  padding: 0 8px 0 0;
+  margin-bottom: 16px;
   font-size: 14px;
   transition: all ease .25s;
   cursor: pointer;
-  &:hover {
-    background-color: $gr900;
-  }
+  font-weight: 600;
+
 }
 .leftside-bar {
   position: fixed;
@@ -25,13 +24,16 @@
   width: 245px;
   background-color: black;
   min-height: 100px;
-  box-shadow: $shadow4;
   z-index: 4;
-  padding: 16px;
+  padding: 0 0 16px 16px;
   &-user-block {
     @include left-nav-block;
+    padding: 32px 0;
     .bar {
       @include left-nav-bar;
+      &:hover {
+        color: #78909C;
+      }
       span {
         display: block;
         height: 100%;
@@ -41,7 +43,7 @@
       }
     }
     .active {
-      border-bottom: 3px solid $red600;
+      color: #78909C;
     }
   }
   .search-block {
@@ -52,6 +54,33 @@
       background-color: transparent;
       border: 1px solid $gr800;
       padding: 5px;
+    }
+  }
+  .back-block {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding-bottom: 32px;
+    .back-button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      @include flex-simple;
+      @include flex-fullcenter;
+      width: 30px;
+      height: 30px;
+      color: $gr50;
+      font-size: 32px;
+      cursor: pointer;
+      transition: .25s;
+      &:hover {
+        color: #78909C;
+      }
+      i {
+        margin: 0;
+        width: auto;
+        height: auto;
+      }
     }
   }
 }

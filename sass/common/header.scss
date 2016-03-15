@@ -1,0 +1,55 @@
+header {
+  width: 100%;
+  height: 120px;
+
+  /*border-bottom: 4px solid black;*/
+  margin-bottom: 1px;
+  @include flex-simple;
+  @include flex-start;
+  .logo-block {
+    width: 245px;
+    height: 100%;
+    font-size: 20px;
+    padding: 6px;
+    font-weight: 600;
+    background-color: $gr800;
+    background-image: url("../img/icons/circle.png");
+    background-size: 100%;
+    background-position: left -86px center;
+    background-repeat: no-repeat;
+    color: $gr50;
+    box-shadow: $shadow1;
+    @include flex-simple;
+    @include flex-fullcenter;
+    @include flex-end;
+    a {
+      color: #fafafa;
+      text-decoration: none;
+    }
+  }
+  .top-nav {
+    width: calc(100% - 245px);
+    height: 100%;
+    background-color: $gr50;
+    box-shadow: $shadow1;
+    ul {
+      width: 100%;
+      height: 100%;
+      @include flex-simple;
+      @include space-around;
+      @include flex-row-vertical-center;
+      li {
+        height: 100%;
+        a {
+          color: $gr900;
+          font-size: 14px;
+          font-weight: 400;
+          text-decoration: none;
+          height: 100%;
+          @include flex-simple;
+          @include flex-row-vertical-center;
+        }
+      }
+    }
+  }
+}
