@@ -108,7 +108,7 @@ table {
     position: relative;
     width: 100%;
     height: 50px;
-    padding-bottom: 32px; }
+    display: flex; }
     .leftside-bar .back-block .back-button {
       position: absolute;
       right: 0;
