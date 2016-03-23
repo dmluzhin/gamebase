@@ -5,14 +5,10 @@
 @import "lib/iconbox";
 @import "common/lefsidebar";
 @import "common/header";
+@import "common/buttons";
 body {
   background-color: $gr50;
   font-family: 'Roboto Slab', serif;
-}
-i {
-  margin-right: 16px;
-  width: 14px;
-  height: 14px;
 }
 .wrapper {
   @include wrapper;
@@ -38,23 +34,6 @@ section {
   width: 100%;
   min-height: 200px;
   background-color: $gr50;
-}
-.leftside-bar {
-  position: fixed;
-  left:0; bottom: 0;
-  height: calc(100% - 120px);
-  width: 245px;
-  background-color: $gr900;
-  min-height: 100px;
-  z-index: 4;
-}
-.rightside-bar {
-  /*position: fixed;
-  right: 0; bottom: 0;
-  height: calc(100% - 61px);
-  width: 270px;
-  background-color: $gr50;
-  border-left: 1px solid #ccc;*/
 }
 .page {
   width: calc(100% - 246px);
