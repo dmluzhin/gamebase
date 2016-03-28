@@ -1,14 +1,14 @@
 @mixin left-nav-block {
   width: 100%;
   min-height: 20px;
-  border-bottom: 1px solid $gr800;
+  border-bottom: 1px solid #cccccc;
 }
 @mixin left-nav-bar {
   @include flex-simple;
   @include align-items-center;
   width: 100%;
   height: 30px;
-  color: $gr200;
+  color: $gr900;
   padding: 0 8px 0 0;
   margin-bottom: 16px;
   font-size: 14px;
@@ -19,33 +19,28 @@
 }
 .logo-block {
   width: 100%;
-  height: 120px;
+  height: 60px;
   font-size: 20px;
   padding: 6px;
   font-weight: 600;
-  background-color: $gr800;
-  background-image: url("../img/icons/circle.png");
-  background-size: 100%;
-  background-position: left -86px center;
-  background-repeat: no-repeat;
-  color: $gr50;
-  box-shadow: $shadow1;
+  color: $gr900;
   @include flex-simple;
   @include flex-fullcenter;
-  @include flex-end;
+  border-bottom: 1px solid #ccc;
   a {
-    color: #fafafa;
+    color: $gr900;
     text-decoration: none;
   }
 }
 .leftside-bar {
-  position: fixed;
+  position: absolute;
   left:0; bottom: 0;
   height: 100%;
-  width: 245px;
-  background-color: black;
+  width: 240px;
+  background-color: white;
   min-height: 100px;
   z-index: 4;
+  box-shadow: $shadow2;
   &-user-block {
     @include left-nav-block;
     padding: 32px 0;
@@ -79,9 +74,10 @@
       width: calc(100% - 16px);
       height: 32px;
       background-color: transparent;
-      border: 1px solid $gr800;
+      border: 1px solid #cccccc;
       padding: 5px;
       color: $gr50;
+      margin-left: 8px;
     }
   }
   .back-block {
