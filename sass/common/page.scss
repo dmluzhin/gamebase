@@ -11,6 +11,36 @@
   overflow-x: hidden;
 }
 
-.grid {
+.news {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-color: #ffffff;
+  margin: 16px 0;
+  padding: 16px;
+  &-grid {
+    @include flex-simple;
+    @include flex-start;
+    @include wrap;
+    width: 100%;
+    min-height: 100px;
 
+
+    .news-cell {
+      width: 200px;
+      height: 270px;
+      overflow: hidden;
+      padding: 16px 10px 10px;
+      box-shadow: $shadow1;
+      background-color: #f5f5f5;
+      margin: 16px;
+      cursor: pointer;
+      &:hover {
+        border: 2px solid #00796B;
+      }
+    }
+  }
+
+  h1, h2, h3 {
+    margin-left: 16px;
+  }
 }
