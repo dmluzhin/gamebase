@@ -1,12 +1,13 @@
 header {
   position: absolute;
   top: 0;
-  right: 0;
-  width: calc(100% - 240px);
+  right: 200px;
+  width: calc(100% - 440px);
   height: 60px;
   border-bottom: 1px solid #cccccc;
-  z-index: 1;
+  z-index: 2;
   background-color: #ffffff;
+  box-shadow: $shadow2;
   @include flex-simple;
   @include flex-start;
 
