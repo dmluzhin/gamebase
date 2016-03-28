@@ -48,7 +48,7 @@
     .bar {
       @include left-nav-bar;
       &:hover {
-        color: #78909C;
+        color: #00796B;
       }
       span {
         display: block;
@@ -63,7 +63,7 @@
       }
     }
     .active {
-      color: #78909C;
+      color: #00796B;
     }
   }
   .search-block {

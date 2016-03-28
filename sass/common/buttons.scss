@@ -6,7 +6,7 @@
   position: absolute;
   right: 8px;
   top: 32px;
-  background-color: #424242;
+  background-color: #00796B;
   cursor: pointer;
   transition: all ease .25s;
   &:hover {
@@ -20,5 +20,22 @@
     height: 100%;
     color: $gr50;
     font-size: 16px;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icons/svg/close.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: .35;
+  &:hover {
+    opacity: .55;
   }
 }
