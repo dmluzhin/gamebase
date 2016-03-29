@@ -24,8 +24,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9498032">
-              <caret line="73" column="37" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.7155512">
+              <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="covers.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/lib/covers.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.115385">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -34,8 +44,8 @@
       <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.153847">
-              <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+            <state vertical-scroll-proportion="-13.076923">
+              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -44,28 +54,18 @@
       <file leaf-file-name="page.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/common/page.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.615385">
-              <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+            <state vertical-scroll-proportion="-4.6545453">
+              <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="52" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="var.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/lib/var.scss">
+      <file leaf-file-name="header.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/common/header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.615385">
-              <caret line="30" column="18" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lefsidebar.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/common/lefsidebar.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-33.846153">
-              <caret line="119" column="15" selection-start-line="119" selection-start-column="15" selection-end-line="119" selection-end-column="15" />
+            <state vertical-scroll-proportion="-25.5">
+              <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="42" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -85,15 +85,16 @@
       <list>
         <option value="$PROJECT_DIR$/sass/lib/iconbox.scss" />
         <option value="$PROJECT_DIR$/sass/lib/reset.scss" />
-        <option value="$PROJECT_DIR$/test.html" />
-        <option value="$PROJECT_DIR$/sass/common/buttons.scss" />
         <option value="$PROJECT_DIR$/sass/lib/typography.scss" />
         <option value="$PROJECT_DIR$/sass/lib/mixins.scss" />
-        <option value="$PROJECT_DIR$/sass/style.scss" />
-        <option value="$PROJECT_DIR$/sass/common/header.scss" />
-        <option value="$PROJECT_DIR$/sass/common/lefsidebar.scss" />
         <option value="$PROJECT_DIR$/sass/lib/var.scss" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/sass/common/buttons.scss" />
+        <option value="$PROJECT_DIR$/sass/style.scss" />
+        <option value="$PROJECT_DIR$/sass/common/lefsidebar.scss" />
+        <option value="$PROJECT_DIR$/sass/common/header.scss" />
         <option value="$PROJECT_DIR$/sass/common/page.scss" />
+        <option value="$PROJECT_DIR$/sass/lib/covers.scss" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -332,14 +333,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sass/common/lefsidebar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -653,22 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/common/buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.961538">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45177165">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="28" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/lib/mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.4363637">
@@ -685,22 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/common/header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/common/lefsidebar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-33.846153">
-          <caret line="119" column="15" selection-start-line="119" selection-start-column="15" selection-end-line="119" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/lib/var.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.615385">
@@ -709,26 +670,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.384615">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/common/buttons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.73077">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/common/lefsidebar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-33.846153">
+          <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/common/header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.5">
+          <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="42" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sass/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.153847">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        <state vertical-scroll-proportion="-13.076923">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/common/page.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.615385">
-          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+        <state vertical-scroll-proportion="-4.6545453">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="52" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/lib/covers.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.115385">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9498032">
-          <caret line="73" column="37" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.7155512">
+          <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
           <folding />
         </state>
       </provider>

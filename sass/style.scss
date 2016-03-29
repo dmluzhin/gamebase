@@ -4,6 +4,7 @@
 @import "lib/fonts";
 @import "lib/iconbox";
 @import "lib/typography";
+@import "lib/covers";
 @import "common/lefsidebar";
 @import "common/header";
 @import "common/buttons";
@@ -38,7 +39,7 @@ footer {
 section {
   width: 100%;
   min-height: 200px;
-  background-color: $gr50;
+  background-color: white;
 }
 
 

@@ -39,3 +39,27 @@
     opacity: .55;
   }
 }
+
+.simple-button {
+  display: inline-block;
+  min-width: 30px;
+  min-height: 30px;
+  margin: 8px auto;
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $green500;
+  cursor: pointer;
+}
+
+.show-more {
+  border: 2px solid $green500;
+  border-radius: 2px;
+  &:hover {
+    background-color: $green500;
+    color: white;
+  }
+}

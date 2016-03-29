@@ -11,9 +11,16 @@
   overflow-x: hidden;
   box-shadow: $shadow2;
   z-index: 3;
+
+  @media screen and (max-width: 1280px) {
+    width: calc(100% - 240px);
+    right: 0;
+  }
 }
 
 .news {
+  @include flex-simple;
+  @include wrap;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   background-color: #ffffff;
@@ -82,4 +89,13 @@
   p {
     margin-bottom: 0;
   }
+}
+
+.popular {
+  @include flex-simple;
+  @include wrap;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
