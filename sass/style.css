@@ -159,6 +159,11 @@ p {
   padding: 6px;
   font-weight: 600;
   color: #212121;
+  background-image: url("../img/Gamebase.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: center;
+  background-size: 50px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
