@@ -1,0 +1,19 @@
+{
+  "name": "gamebase",
+  "version": "0.0.0",
+  "authors": [
+    "d.m.luzhin <d.m.luzhin@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+	"normalize.css": "*",
+    "jquery": "2.*"
+  }
+}

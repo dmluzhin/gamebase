@@ -1,0 +1,88 @@
+@import "../../bower_components/normalize.css/normalize.css";
+@import "lib/var";
+@import "lib/mixins";
+@import "lib/reset";
+@import "lib/fonts";
+@import "lib/iconbox";
+@import "lib/typography";
+@import "lib/covers";
+
+body {
+  background-color: $gr50;
+  font-family: 'Roboto Slab', serif;
+  background-image: url("http://oboi.cc/uploads/11_05_2013/view/201209/oboik.ru_33286.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container {
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  box-shadow: $shadow1;
+}
+
+footer {
+  width: 100%;
+  min-height: 100px;
+  background-color: $gr50;
+  margin-top: 1px;
+}
+section {
+  width: 100%;
+  min-height: 200px;
+  background-color: white;
+}
+
+
+
+
+/*DELETE THIS*/
+.first-letter {
+  position: absolute;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 45px;
+  color: white;
+  bottom: 2px;
+  left: 34px;
+  span {
+    font-size: 33px;
+  }
+}
+.second-letter {
+  position: absolute;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  color: #F44336;
+  left: 83px;
+  top: 12px;
+}
+.banner {
+  @include flex-simple;
+  @include flex-fullcenter;
+  @include flex-column;
+  position: relative;
+  width: 100%;
+  min-height: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 24px;
+  border-bottom: 1px solid #ccc;
+}
+
+.green-txt {
+  color: #00796B;
+}
+
+
+@import "common/lefsidebar";
+@import "common/header";
+@import "common/buttons";
+@import "common/page";

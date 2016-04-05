@@ -1,0 +1,131 @@
+@mixin left-nav-block {
+  width: 100%;
+  min-height: 20px;
+  border-bottom: 1px solid #cccccc;
+}
+@mixin left-nav-bar {
+  @include flex-simple;
+  @include align-items-center;
+  width: 100%;
+  height: 30px;
+  color: $gr900;
+  padding: 0 8px 0 0;
+  margin-bottom: 16px;
+  font-size: 14px;
+  transition: all ease .25s;
+  cursor: pointer;
+  font-weight: 600;
+
+}
+.logo-block {
+  width: 100%;
+  height: 60px;
+  font-size: 20px;
+  padding: 6px;
+  font-weight: 600;
+  color: $gr900;
+  background-image: url("../img/Gamebase.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: center;
+  background-size: 50px;
+  @include flex-simple;
+  @include flex-fullcenter;
+  border-bottom: 1px solid #ccc;
+  a {
+    color: $gr900;
+    text-decoration: none;
+  }
+}
+.leftside-bar {
+  position: absolute;
+  left:0; bottom: 0;
+  height: 100%;
+  width: 240px;
+  background-color: white;
+  min-height: 100px;
+  z-index: 4;
+  box-shadow: $shadow2;
+  &-user-block {
+    @include left-nav-block;
+    padding: 32px 0;
+    padding-left: 32px;
+    .bar {
+      @include left-nav-bar;
+      &:hover {
+        color: #00796B;
+      }
+      span {
+        display: block;
+        height: 100%;
+        line-height: 2.3;
+        padding-right: 10px;
+        text-align: left;
+      }
+      i {
+        width: 16px;
+        margin-right: 16px;
+      }
+    }
+    .active {
+      color: #00796B;
+    }
+  }
+  .search-block {
+    @include left-nav-block;
+    padding: 32px 0;
+    position: relative;
+    .search {
+      width: calc(100% - 16px);
+      height: 32px;
+      background-color: transparent;
+      border: 1px solid #cccccc;
+      padding: 5px;
+      color: $gr50;
+      margin-left: 8px;
+    }
+  }
+  .back-block {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+
+    span {
+    }
+    .back-button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      @include flex-simple;
+      @include flex-fullcenter;
+      width: 30px;
+      height: 30px;
+      color: $gr50;
+      font-size: 32px;
+      cursor: pointer;
+      transition: .25s;
+      &:hover {
+        color: #78909C;
+      }
+      i {
+        margin: 0;
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+}
+
+.rightside-bar {
+  position: absolute;
+  right:0;
+  bottom: 0;
+  width: 200px;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  @media screen and (max-width: 1280px){
+    display: none;
+  }
+}

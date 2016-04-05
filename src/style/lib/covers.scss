@@ -1,0 +1,73 @@
+.post-cover {
+  position: relative;
+  cursor: pointer;
+}
+.post-cover-popular {
+  width: 100%;
+  height: 400px;
+  padding: 16px;
+  -webkit-font-smoothing: antialiased;
+
+  .cover-image {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    z-index: 1;
+    overflow: hidden;
+    color: #ffffff !important;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .overlay {
+    @include flex-simple;
+    @include flex-column;
+    @include flex-end;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    padding: 16px;
+    &:before {
+      content: "";
+      position: absolute;
+      border: 2px solid white;
+      left: 16px;
+      top: 16px;
+      right: 16px;
+      bottom: 16px;
+      display: block;
+    }
+  }
+
+  .cover-wrap {
+    display: block;
+    width: 98%;
+    min-height: 100px;
+    margin: 0 auto;
+    color: white;
+    z-index: 2;
+
+    h1 {
+      font-family: 'Roboto Slab', serif;
+      font-size: 36px;
+      font-weight: 600;
+      margin: 0 0 8px;
+      padding: 0 0 8px;
+      border-bottom: 2px solid white;
+      transition: all ease .25s;
+      &:hover {
+        color: $green500;
+      }
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.3;
+      margin: 0 0 8px;
+    }
+  }
+}
