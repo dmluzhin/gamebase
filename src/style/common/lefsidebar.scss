@@ -38,8 +38,8 @@
   }
 }
 .leftside-bar {
-  position: absolute;
-  left:0; bottom: 0;
+  position: fixed;
+  bottom: 0;
   height: 100%;
   width: 240px;
   background-color: white;
